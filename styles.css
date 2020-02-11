@@ -38,14 +38,13 @@ h2 {
 }
 
 
-
 p {
     font-size: 1rem;
     line-height: 1.25;
 }
 
 a {
-    color: #fff;
+    color: #000;
 }
 
 .header {
@@ -56,11 +55,7 @@ a {
 }
 
 .billboard {
-    background: #fff url(img/header-bg.jpg) 50% no-repeat;
-    background-size: cover;
     color: #fff;
-    height: 100vh;
-    position: relative;
 }
 
 .billboard__content {
@@ -98,7 +93,7 @@ a {
 }
 
 .navigation__list {
-    min-width: 35%;
+    min-width: 50%;
 }
 
 .logo svg path {
@@ -123,7 +118,7 @@ a {
 }
 
 .billboard::before {
-    background: #000;
+    background: #fff;
     content: '';
     display: block;
     height: 100%;
@@ -150,15 +145,6 @@ a {
     flex-direction: row-reverse;
 }
 
-.column__image {
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: none;
-    margin: 0 auto;
-    max-width: 75%;
-    position: relative;
-}
 
 .column__image::before {
     content: '';
@@ -166,42 +152,11 @@ a {
     padding-bottom: 100%;
 }
 
-.column__image::after {
-    border: 10px solid #f7d219;
-    content: '';
-    display: block;
-    height: 10rem;
-    margin-top: -5rem;
-    margin-right: -5rem;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 10rem;
-}
-
-.reverse .column__image::after {
-    left: 0;
-    margin-left: -5rem;
-    margin-right: 0;
-    right: initial;
-}
-
 .about-image {
-    background-image: url(img/fire.jpg);
+    background-image: url(img/logofransje.jpg);
+    size: 1/100:
 }
 
-.team-image {
-    background-image: url(img/chef.jpg);
-}
-
-.bg-team {
-    background: #000 url(img/speciality-bg.png) 50% no-repeat;
-    background-size: cover;
-}
-
-.clocks-image {
-    background-image: url(img/clocks.jpg);
-}
 
 .titular {
     text-transform: uppercase;
