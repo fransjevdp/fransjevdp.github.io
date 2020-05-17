@@ -333,10 +333,6 @@ footer {
 /* mobiel */
 @media screen and (min-width: 1px) and (max-width: 600px){
 
-	.vertical {
-        width: 100%;
-    }
-	
 	.container {
 		-webkit-column-count: 1;    
 		-webkit-column-gap:   0px;    
@@ -344,6 +340,9 @@ footer {
 		-moz-column-gap:      0px;    
 		column-count:         1;    
 		column-gap:           20px;
+    	margin-bottom: 		0px;
+    	margin-left: 		28px;
+    	margin-right: 		28px;
 	}
 	
 	.project_info { 		
@@ -411,9 +410,12 @@ footer {
 	}
 	
 	.img {
-		width: 88%;
-		display: block;
-  		margin: 0 auto;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 0;
 	}
 	
 	.project_info {
@@ -443,13 +445,15 @@ footer {
 	p {
 		margin-bottom: 0px;
 	}
-	
+
+
 	.abouttext {
     	font-family: 'Barlow', Helvetica, sans-serif;
     	text-align: left;
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
 	
 }
 
