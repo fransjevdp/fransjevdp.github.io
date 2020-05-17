@@ -12,8 +12,10 @@ html, body {
 }
 
 a {
-	cursor: url("img/vingerzwart.png"), auto;
+	cursor: url("img/vinger.png"), auto;
 }
+
+
 
 body, h1, h2, p {
     margin: 0;
