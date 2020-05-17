@@ -2,11 +2,17 @@
     box-sizing: border-box;
 }
 
+
 html, body {
-    background-color: white;
     height: 100%;
     font-family: 'Raleway', Helvetica, sans-serif;
+     /* font-family: 'Barlow', Helvetica, sans-serif; */
     width: 100%;
+    cursor: url("img/vinger.png"), auto;
+}
+
+a {
+	cursor: url("img/vingerzwart.png"), auto;
 }
 
 body, h1, h2, p {
@@ -15,8 +21,37 @@ body, h1, h2, p {
 
 img {
     display: block;
-    max-width: 100%;
+	max-width: 100%;
+	box-sizing: content-box;
 }
+
+
+.abouttext {
+    font-family: 'Barlow', Helvetica, sans-serif;
+    text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	
+}
+
+.linkedin {
+	display: flex;
+	justify-content: center;
+}
+
+.gif1 {
+	align: right;
+}
+
+
+.init {
+    color: white;
+}
+
+.main {
+    padding-top: 30px;
+}
+
 
 svg {
     display: block;
@@ -29,156 +64,232 @@ ul, ol {
 }
 
 h1 {
-    font-size: 3.5rem;
-    color: #000
+    font-size: 22.78px;
+    color: #000;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 22.78px;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 22.78px;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+h4 {     
+	font-family: 'Barlow', Helvetica, sans-serif;     
+	font-weight: 300;     
+	font-size: 22.78px;     
+	line-height: 1.25; 
+	text-align: center;
 }
 
 
 p {
-    font-size: 1rem;
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     line-height: 1.25;
+	margin-bottom: 2rem;
 }
 
 a {
     color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.gif {     
+	width: 80%; 	
+	margin: 0 auto; 	
+	height: 300px; 
 }
 
 .header {
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+	padding: 1rem 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	z-index: 1;
+	background: #fff;
+	height: 170px;
+	max-width: 930px;
 }
 
-.billboard {
+.Logo img {
+    margin: 0 auto 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bovenkant {
+	width: 300px;
+	margin: 0 auto;
+	
+}
+
+.button {
     color: #fff;
+    background-color: #000000;
+    border: #000000 solid 2px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+	font-family: 'Raleway', Helvetica, sans-serif;
 }
 
-.billboard__content {
+.button.desktop {
+	display: inline; 
+}
+
+.button.mobile {
+	display: none; 
+}
+
+.button:hover {
+    background-color: white;
+    border: #000000 solid 2px;
+    color: #000000;
+}
+
+.container {
     text-align: center;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+	-webkit-column-count: 4;    
+	-webkit-column-gap:   0px;    
+	-moz-column-count:    4;    
+	-moz-column-gap:      0px;    
+	column-count:         4;    
+	column-gap:           20px;
+  }
+
+.imgklein {
+	height: 50%;
 }
 
-.billboard__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 80vh;
-}
-
-.billboard__schedule {
-    position: absolute;
-    left: 0;
-    /*
-     * código necesario porque "transform:rotate" cambia el eje del elemento
-     * y para normalizarlo tenemos que añadir cálculos matemáticos
-     */
-    transform: rotate(-90deg) translate(-50%, calc(50% + 20px));
-    transform-origin: 0 50%;
-}
-
-.billboard__rrss {
-    position: absolute;
-    right: 0;
+.menu:hover {
+    font-weight: 700;
 }
 
 .navigation,
 .navigation__list {
     display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+	width: 100%;
 }
 
-.navigation__list {
-    min-width: 50%;
+
+.contacttext {
+	padding-left: auto;
+	padding-right: auto;
 }
 
-.logo svg path {
-    fill: #f7d219;
+.portret {
+	width: 50%;
+	margin: 0 auto;
 }
 
-.social__item {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: block;
-    padding: 10px;
+.contact {      
+	display: flex;     
+	flex-direction: row;     
+	max-width: 850px;     
+	margin: 0 auto;      
+	padding: 0 30px; 	
+	margin-bottom: 2rem; }
+
+.contentphoto {
+	width: 35%;
+    margin: 0 auto; 
+    padding: 0 30px;
+	margin-bottom: 2rem;
 }
 
-.underline::after {
-    background: f7d219;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    height: 4px;
-    margin: 20px auto 0;
-    width: 80px;
+.spacetraveltext {
+		width: 100% !important; 
+		display: block;
 }
 
-.billboard::before {
-    background: #fff;
-    content: '';
-    display: block;
-    height: 100%;
-    opacity: 0.65;
-    position: absolute;
-    width: 100%;
+.projects {     
+	display: flex;     
+	flex-direction: row;     
+	max-width: 850px;     
+	margin: 0 auto;      
+	padding: 0 30px; 	
+	margin-bottom: 2rem; 	
+	align-items: center; 	 
 }
+
+.top{
+	align-items: flex-start;
+}
+
+.projectphototweederde {
+	width: 66.6%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.projectphotoeenderde {
+	width: 33.3%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+
+.projectshorizontal {
+	display: flex;
+    flex-direction: row;
+    max-width: 850px;
+    margin: 0 auto; 
+    padding: 0 30px;
+}	
+
+.projectphoto {
+	width: 50%;
+}
+
 
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 20px;
     position: relative;
+	align-content: center;
 }
 
 
-.section {
-    padding: 2rem 0;
-    min-height: 40vh;
+.item {
+    width: 100%;
+	margin-bottom: 20px;
 }
 
-
-.reverse {
-    flex-direction: row-reverse;
-}
-
-
-.column__image::before {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
+.item:hover {
+    opacity: 70%;
 }
 
 .about-image {
     background-image: url(img/logofransje.jpg);
-    size: 1/100:
+    display: flex;
+    position: absolute;
+    width: 300px;
 }
 
-
-.titular {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.titular1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0,5rem;
-    
-}
-
-.titular::after {
-    background: #f7d219;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    height: 4px;
-    margin: 20px auto 0;
-    width: 80px;
-}
 
 .text-center {
     text-align: center;
@@ -188,33 +299,179 @@ a {
     text-transform: uppercase;
 }
 
-.big {
-    font-size: 1.35rem;
-    font-weight: 700;
-}
 
 .text-white {
     color: #fff;
 }
 
+.vertical {
+	width: 25%;
+	padding: 10px;
+}
+
+.project_info { 	
+	width: 50%; 	
+	padding: 30px; 	
+	margin-top: auto; 	
+	margin-bottom: auto; 	
+	display: flex; 	
+	justify-content: center; 	
+	flex-direction: column; 
+}
+
+.text { 
+	margin: 0 auto;
+}
+
 footer {
-    background: rgb(22, 22, 22);
-    height: 8.5vh;
-    color: rgb(214, 214, 214);
+    background: #fff; 
+    height: 90px;
+    color: rgb(22, 22, 22);
     text-align: center;
 }
 
-.social svg path,
-.social svg circle { fill: white; }
+/* mobiel */
+@media screen and (min-width: 1px) and (max-width: 600px){
+
+	.vertical {
+        width: 100%;
+    }
+	
+	.container {
+		-webkit-column-count: 1;    
+		-webkit-column-gap:   0px;    
+		-moz-column-count:    1;    
+		-moz-column-gap:      0px;    
+		column-count:         1;    
+		column-gap:           20px;
+	}
+	
+	.project_info { 		
+		padding: 10px !important;
+}
+
+	.contentphoto {
+		width: 95% !important;
+	}
+	
+	.projectphoto {
+		width: 95% !important;
+		display: block;
+  		margin-left: 0 auto;
+		text-align: center;
+	}
+	
+	.button.mobile {
+		display: block;
+  		padding-left: 8px;
+  
+	}
+	
+	.footer {
+		padding-top: 10px;
+	}
+	
+	.contact {  	 
+		flex-direction: column; 	
+	} 	
+	
+	.gif { 		
+		width: 50%; 		
+		height: auto; 		 	
+	}
+	
+	.portretmobile {
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	h3 {
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+	
+		/* projects pagina single column */
+	.projects {
+        flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+    }
+
+	.projectphoto {
+		width: 88%;
+		display: block;
+  		margin-left: 0 auto;
+	}
+	
+	.img {
+		width: 88%;
+		display: block;
+  		margin: 0 auto;
+	}
+	
+	.project_info {
+		width: 100%;
+	}
+	
+	.projectphototweederde {
+		width: 100%;
+	}
+	
+	.projectphotoeenderde {
+		width: 100%;
+	}
+	
+	.button.desktop {
+		display: none; 
+	}
+
+	.button.mobile {
+		display: inline; 
+	}
+	
+	.contentphoto {
+		width: 88%;
+	}
+	
+	p {
+		margin-bottom: 0px;
+	}
+	
+	.abouttext {
+    	font-family: 'Barlow', Helvetica, sans-serif;
+    	text-align: left;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+}
 
 
-
-
-
-/* min-width: 768px / 16 */
-@media screen and (min-width: 48em) {
+/* ipad */
+@media screen and (min-width: 600px) and (max-width: 800px){
+	.vertical {
+        width: 50%;
+    }
+	
+	.container {
+		-webkit-column-count: 2;    
+		-webkit-column-gap:   0px;    
+		-moz-column-count:    2;    
+		-moz-column-gap:      0px;    
+		column-count:         2;    
+		column-gap:           20px;
+	}
+		
     .row {
         display: flex;
+        justify-content: space-between;
     }
 
     .column {
@@ -224,9 +481,159 @@ footer {
     .column__image {
         display: block;
     }
+		
+
+	.abouttext {
+    	font-family: 'Barlow', Helvetica, sans-serif;
+    	text-align: left;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.portretmobile {
+		width: 50%;
+		margin: 0 auto;
+	}	
+	
+	h3 {
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20.25px;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+	
+	
+		/* projects pagina single column */
+	.projects {
+        flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+    }
+
+	.projectphoto {
+		width: 88%;
+		display: block;
+  		margin: 0 auto;
+		text-align:center;
+	}
+	
+	.img {
+		width: 88%;
+		display: block;
+  		margin: 0 auto;
+	}
+	
+	.project_info {
+		width: 100%;
+	}
+	
+	.projectphototweederde {
+		width: 100%;
+	}
+	
+	.projectphotoeenderde {
+		width: 100%;
+	}
+	
+	.button.desktop {
+		display: none; 
+	}
+
+	.button.mobile {
+		display: inline; 
+	}
+	
+	.contentphoto {
+		width: 88%;
+	}
+	
+	p {
+		margin-bottom: 0px;
+	}
 }
 
 
 
 
+
+/* 3 columns klein computer scherm */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+	.vertical {
+        width: 33.3%;
+    }
+	
+	.container {
+		-webkit-column-count: 3;    
+		-webkit-column-gap:   0px;    
+		-moz-column-count:    3;    
+		-moz-column-gap:      0px;    
+		column-count:         3;    
+		column-gap:           20px;
+	}
+	
+	/* projects pagina single column */
+	.projects {
+        flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+    }
+
+	.projectphoto {
+		width: 88%;
+		display: block;
+  		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.img {
+		width: 88%;
+		display: block;
+  		margin: 0 auto;
+	}
+	
+	.project_info {
+		width: 100%;
+	}
+	
+	.projectphototweederde {
+		width: 100%;
+	}
+	
+	.projectphotoeenderde {
+		width: 100%;
+	}
+	
+	.button.desktop {
+		display: none; 
+	}
+
+	.button.mobile {
+		display: inline; 
+	}
+	
+	.contentphoto {
+		width: 88%;
+	}
+	
+	p {
+		margin-bottom: 0px;
+	}
+	
+	h3 {
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20.25px;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+}
 
