@@ -8,13 +8,7 @@ html, body {
     font-family: 'Raleway', Helvetica, sans-serif;
      /* font-family: 'Barlow', Helvetica, sans-serif; */
     width: 100%;
-    cursor: url("img/vinger.png"), auto;
 }
-
-a {
-	cursor: url("img/vinger.png"), auto;
-}
-
 
 
 body, h1, h2, p {
@@ -206,6 +200,12 @@ a {
 	margin: 0 auto;
 }
 
+.portretgreenhopper {
+	width: 50%;
+	float: right;
+	margin-right: 65px;
+}
+
 .contact {      
 	display: flex;     
 	flex-direction: row;     
@@ -264,6 +264,7 @@ a {
 
 .projectphoto {
 	width: 50%;
+	float: right;
 }
 
 
